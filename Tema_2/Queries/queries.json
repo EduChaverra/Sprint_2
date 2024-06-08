@@ -1,0 +1,10 @@
+{},
+{"restaurant_id": 1,"name": 1,"borough": 1,"cuisine": 1}
+{"restaurant_id":1,"name":1,"borough":1,"cuisine":1,"_id":0}
+{"restaurant_id":1,"name":1,"borough":1,"address.zipcode":1,"_id":0}
+{"name":1,"borough":"Bronx"}
+{"name":1,"borough":"Bronx"}).limit(5);
+{"name":1,"borough":"Bronx"}).limit(5).skip(5);
+{"grades.score":{"$gt":90}}
+{"grades.score":{"$gt":80,"$lt":100}}
+{"address.coord.0":{$lt:-95.754168}}
