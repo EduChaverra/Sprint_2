@@ -5,6 +5,28 @@
 {"name":1,"borough":"Bronx"}
 {"name":1,"borough":"Bronx"}).limit(5);
 {"name":1,"borough":"Bronx"}).limit(5).skip(5);
-{"grades.score":{"$gt":90}}
-{"grades.score":{"$gt":80,"$lt":100}}
+{"grades.score":{$gt:90}}
+{"grades.score":{$gt:80,$lt:100}}
 {"address.coord.0":{$lt:-95.754168}}
+{$and:[{"cuisine":{$ne:"American "}},{"grades":{$gt:70}},{"address.coord.1":{$lt:-65.754168}}]}
+{"cuisine":{$ne:"American "},"grades.score":{$gt:70},"address.coord.0":{$lt:-65.754168}}
+{cuisine:{$ne:'American '},'grades.grade':'A',borough:{$ne:'Brooklyn'}},{address:1,restaurant_id:1,name:1,cuisine:1,_id:0}).sort({ cuisine: -1 });
+{"name":{$regex:/^Wil/}},{_id:0,restaurant_id:1,name:1,borough:1,cuisine:1}
+{"name":{$regex:/ces$/}},{_id:0,restaurant_id:1,name:1,borough:1,cuisine:1}
+{"name":{$regex:/Reg/}},{_id:0,restaurant_id:1,name:1,borough:1,cuisine:1}
+{"borough":"Bronx","cuisine":{$in:["American ","Chinese"]}}
+{"borough":{$in:["Staten Island","Queens","Bronx","Brooklyn"]}},{_id:0,restaurant_id:1,name:1,borough:1,cuisine:1}
+{"borough":{$nin:["Staten Island","Queens","Bronx","Brooklyn"]}},{_id:0,restaurant_id:1,name:1,borough:1,cuisine:1}
+{"grades.score":{$lt: 10}},{_id:0,restaurant_id:1,name:1,borough:1,cuisine:1}
+{"cuisine":"Seafood","cuisine":{$nin:["American ","Chinese"]},"name":{$not:/^Wil/}},{_id: 0,restaurant_id:1,name:1,borough:1,cuisine:1}
+{"grades":{$elemMatch:{"grade":"A","score":11,"date":ISODate("2014-08-11T00:00:00Z")}}},{_id:0,restaurant_id:1,name:1,grades:1}
+{"grades.1.grade":"A","grades.1.score":9,"grades.1.date":ISODate("2014-08-11T00:00:00Z")},{_id:0,restaurant_id:1,name:1,grades:1}
+{"address.coord":{$gt:42,$lt:52}},{_id:0,restaurant_id:1,name:1,address:1,}
+.sort{name:1}
+.sort{name:-1}
+.sort{cuisine:1,borough:-1}
+{"address.street":{$exists:true}}
+{"address.coord":{$type:"double"}}
+{"grades": { $elemMatch:{"score":{$mod:[7,0]}}}},{_id:0,restaurant_id:1,name:1,grades:1}
+{"name":{$regex:/mon/}},{_id:0,name:1,borough:1,"address.coord.0": 1,"address.coord.1":1,cuisine:1}
+{"name":{$regex:/^Mad/}},{_id:0,name:1,borough:1,"address.coord.0": 1,"address.coord.1":1,cuisine:1}
