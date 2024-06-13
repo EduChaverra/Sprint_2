@@ -1,0 +1,39 @@
+{
+    "id":1,
+    "nombre":"Aviator Classic",
+    "datos":{
+      "Marca":"Rayban",
+      "Marco":"Metalico",
+      "Proveedor":{
+        "nombre":"Googles Associated SL",
+        "direccion":"rocafort 89",
+        "telefono":987654321,
+        "correo_electronico":"prov1@prov1.com",
+        "nif":"B123456"
+      },
+      "Precio":105.75
+    },
+    "compradas_por":[
+      {
+        "nombre":"pepe",
+        "direccion":"aribau 150",
+        "telefono":678678956,
+        "correo_electronico":"a@a.com",
+        "fecha_registro": "2023-03-29T00:00:00Z"
+      },
+      {
+        "nombre":"lili",
+        "direccion":"fabra i puig 12",
+        "telefono":654987321,
+        "correo_electronico":"b@b.com",
+        "fecha_registro": "2022-11-15T00:00:00Z"
+      },
+      {
+        "nombre":"rosa",
+        "direccion":"diputacio 75",
+        "telefono":612345678,
+        "correo_electronico":"a@a.com",
+        "fecha_registro": "2023-01-21T00:00:00Z"
+      }
+    ] 
+  }

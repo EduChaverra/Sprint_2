@@ -1,0 +1,41 @@
+{
+    "id": 1,
+    "nombre": "Pepe",
+    "datos":{
+      "direccion": "aribau 150",
+      "telefono": 678687956,
+      "email": "a@a.com"
+    }, 
+    "fecha_registro": "2023-03-29T00:00:00Z",
+    
+    "last_shopings": [
+      {
+        "nombre": "rayban",
+        "graduacion":{
+          "izquierdo":2.3,
+          "derecho":2.0
+        },
+        "color_cristal":{
+          "izquierdo":"transparente",
+          "derecho":"transparente"
+        },
+        "tipo_marco": "metalico",
+        "precio": 127,
+        "fecha_compra":"2023-03-29T00:00:00Z"
+      },
+      {
+        "nombre": "praga",
+        "graduacion":{
+          "izquierdo":0.0,
+          "derecho":0.0
+        },
+        "color_cristal":{
+          "izquierdo":"polarizado",
+          "derecho":"polarizado"
+        },
+        "tipo_marco": "fibra de carbono",
+        "precio": 350,
+        "fecha_compra":"2023-11-10T00:00:00Z"
+      }
+    ]
+  }
