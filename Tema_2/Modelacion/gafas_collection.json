@@ -1,39 +1,82 @@
 {
-    "id":1,
-    "nombre":"Aviator Classic",
-    "datos":{
-      "Marca":"Rayban",
-      "Marco":"Metalico",
-      "Proveedor":{
-        "nombre":"Googles Associated SL",
-        "direccion":"rocafort 89",
-        "telefono":987654321,
-        "correo_electronico":"prov1@prov1.com",
-        "nif":"B123456"
-      },
-      "Precio":105.75
+  "id": 1,
+  "nombre": "Aviator Classic",
+  "datos": {
+    "Marca": "Rayban",
+    "Graduacion_vidrios": {
+      "izquierdo": "-1.50",
+      "derecho": "-1.75"
     },
-    "compradas_por":[
-      {
-        "nombre":"pepe",
-        "direccion":"aribau 150",
-        "telefono":678678956,
-        "correo_electronico":"a@a.com",
-        "fecha_registro": "2023-03-29T00:00:00Z"
+    "Marco": "Metalico",
+    "Color_marco": "Dorado",
+    "Color_vidrios": {
+      "izquierdo": "Verde",
+      "derecho": "Verde"
+    },
+    "Proveedor": {
+      "nombre": "Googles Associated SL",
+      "direccion": {
+        "calle": "rocafort",
+        "numero": 89,
+        "ciudad": "Barcelona",
+        "codigo_postal": "08015",
+        "pais": "España"
       },
-      {
-        "nombre":"lili",
-        "direccion":"fabra i puig 12",
-        "telefono":654987321,
-        "correo_electronico":"b@b.com",
-        "fecha_registro": "2022-11-15T00:00:00Z"
+      "telefono": 987654321,
+      "fax": 987654322,
+      "correo_electronico": "prov1@prov1.com",
+      "nif": "B123456"
+    },
+    "Precio": 105.75
+  },
+  "compradas_por": [
+    {
+      "nombre": "pepe",
+      "direccion": {
+        "calle": "aribau",
+        "numero": 150,
+        "ciudad": "Barcelona",
+        "codigo_postal": "08036",
+        "pais": "España"
       },
-      {
-        "nombre":"rosa",
-        "direccion":"diputacio 75",
-        "telefono":612345678,
-        "correo_electronico":"a@a.com",
-        "fecha_registro": "2023-01-21T00:00:00Z"
-      }
-    ] 
-  }
+      "telefono": 678678956,
+      "correo_electronico": "a@a.com",
+      "fecha_registro": "2023-03-29T00:00:00Z",
+      "recomendado_por": null,
+      "empleado_venta": "Ana Pérez",
+      "fecha_venta": "2023-03-30T14:35:00Z"
+    },
+    {
+      "nombre": "lili",
+      "direccion": {
+        "calle": "fabra i puig",
+        "numero": 12,
+        "ciudad": "Barcelona",
+        "codigo_postal": "08016",
+        "pais": "España"
+      },
+      "telefono": 654987321,
+      "correo_electronico": "b@b.com",
+      "fecha_registro": "2022-11-15T00:00:00Z",
+      "recomendado_por": "pepe",
+      "empleado_venta": "Juan García",
+      "fecha_venta": "2022-11-16T09:45:00Z"
+    },
+    {
+      "nombre": "rosa",
+      "direccion": {
+        "calle": "diputacio",
+        "numero": 75,
+        "ciudad": "Barcelona",
+        "codigo_postal": "08009",
+        "pais": "España"
+      },
+      "telefono": 612345678,
+      "correo_electronico": "a@a.com",
+      "fecha_registro": "2023-01-21T00:00:00Z",
+      "recomendado_por": "lili",
+      "empleado_venta": "María López",
+      "fecha_venta": "2023-01-22T16:20:00Z"
+    }
+  ]
+}
