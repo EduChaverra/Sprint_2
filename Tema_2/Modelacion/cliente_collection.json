@@ -7,6 +7,7 @@
       "email": "a@a.com"
     }, 
     "fecha_registro": "2023-03-29T00:00:00Z",
+    "referido_por": null,
     
     "last_shopings": [
       {
@@ -20,22 +21,65 @@
           "derecho":"transparente"
         },
         "tipo_marco": "metalico",
+        "color_marco": "negro",
         "precio": 127,
-        "fecha_compra":"2023-03-29T00:00:00Z"
+        "fecha_compra": "2023-03-29T00:00:00Z",
+        "empleado": {
+          "nombre": "María",
+          "id": 1001
+        },
+        "proveedor": {
+          "nombre": "Distribuciones Ópticas S.A.",
+          "direccion": {
+            "calle": "Gran Vía",
+            "numero": 123,
+            "piso": 1,
+            "puerta": "2A",
+            "ciudad": "Barcelona",
+            "codigo_postal": "08010",
+            "pais": "España"
+          },
+          "telefono": 934567890,
+          "fax": 934567891,
+          "NIF": "A12345678"
+        }
       },
       {
         "nombre": "praga",
-        "graduacion":{
-          "izquierdo":0.0,
-          "derecho":0.0
+        "graduacion": {
+          "izquierdo": 0.0,
+          "derecho": 0.0
         },
-        "color_cristal":{
-          "izquierdo":"polarizado",
-          "derecho":"polarizado"
+        "color_cristal": {
+          "izquierdo": "polarizado",
+          "derecho": "polarizado"
         },
         "tipo_marco": "fibra de carbono",
+        "color_marco": "gris",
         "precio": 350,
-        "fecha_compra":"2023-11-10T00:00:00Z"
+        "fecha_compra": "2023-11-10T00:00:00Z",
+        "empleado": {
+          "nombre": "Carlos",
+          "id": 1002
+        },
+        "proveedor": {
+          "nombre": "Optica Proveedores SL",
+          "direccion": {
+            "calle": "Paseo de Gracia",
+            "numero": 456,
+            "piso": 3,
+            "puerta": "1B",
+            "ciudad": "Madrid",
+            "codigo_postal": "28001",
+            "pais": "España"
+          },
+          "telefono": 912345678,
+          "fax": 912345679,
+          "NIF": "B87654321"
+        }
       }
     ]
   }
+     
+
+  
